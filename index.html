@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shane's Memory Match</title>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!--<script src="http://learning-fuze.github.io/memory_match/v0.1/script.js"></script>-->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <img class="logopic" src="images/2000px-SmashBall.svg.png")>
+        <p class="title">SUPER MATCH BROS MELEE</p>
+        <p><a class="about_link" href="about.html">About</a></p>
+        <p>Settings</p>
+    </header>
+    <nav>
+        <p class="Stats">Stats</p>
+        <div class="games_played">
+            <label class="label">Games Played</label>
+            <p class="value"></p>
+        </div>
+        <div class="attempts">
+            <label class="label">Attempts</label>
+            <p class="value"></p>
+        </div>
+        <div class="accuracy">
+            <label class="label">Accuracy</label>
+            <p class="value"></p>
+        </div>
+        <button class="reset">Reset Game</button>
+    </nav>
+    <main id="game-area">
+        <!--<div class="row">-->
+            <!--<div class="card col-xs-2">-->
+                <!--<div class="front"><img class="front_img" src="images/Falco.png"></div>-->
+                <!--<div class="back"><img class="back_img" src="images/SSBM.jpg"></div>-->
+            <!--</div>-->
+            <!--<div class="card col-xs-2">-->
+                <!--<div class="front"><img class="front_img" src="images/Falco.png"></div>-->
+                <!--<div class="back"><img class="back_img" src="images/SSBM.jpg"></div>-->
+            <!--</div>-->
+            <!--<div class="card col-xs-2">-->
+                <!--<div class="front"><img class="front_img" src="images/Fox.png"></div>-->
+                <!--<div class="back"><img class="back_img" src="images/SSBM.jpg"></div>-->
+            <!--</div>-->
+            <!--<div class="card col-xs-2">-->
+                <!--<div class="front"><img class="front_img" src="images/Fox.png"></div>-->
+                <!--<div class="back"><img class="back_img" src="images/SSBM.jpg"></div>-->
+            <!--</div>-->
+            <!--<div class="card col-xs-2">-->
+                <!--<div class="front"><img class="front_img" src="images/Iceclimber.png"></div>-->
+                <!--<div class="back"><img class="back_img" src="images/SSBM.jpg"></div>-->
+            <!--</div>-->
+            <!--<div class="card col-xs-2">-->
+                <!--<div class="front"><img class="front_img" src="images/Iceclimber.png"></div>-->
+                <!--<div class="back"><img class="back_img" src="images/SSBM.jpg"></div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="row">-->
+            <!--<div class="card col-xs-2">-->
+                <!--<div class="front"><img class="front_img" src="images/Kirby.png"></div>-->
+                <!--<div class="back"><img class="back_img" src="images/SSBM.jpg"></div>-->
+            <!--</div>-->
+            <!--<div class="card col-xs-2">-->
+                <!--<div class="front"><img class="front_img" src="images/Kirby.png"></div>-->
+                <!--<div class="back"><img class="back_img" src="images/SSBM.jpg"></div>-->
+            <!--</div>-->
+            <!--<div class="card col-xs-2">-->
+                <!--<div class="front"><img class="front_img" src="images/Link.png"></div>-->
+                <!--<div class="back"><img class="back_img" src="images/SSBM.jpg"></div>-->
+            <!--</div>-->
+            <!--<div class="card col-xs-2">-->
+                <!--<div class="front"><img class="front_img" src="images/Link.png"></div>-->
+                <!--<div class="back"><img class="back_img" src="images/SSBM.jpg"></div>-->
+            <!--</div>-->
+            <!--<div class="card col-xs-2">-->
+                <!--<div class="front"><img class="front_img" src="images/Luigi.png"></div>-->
+                <!--<div class="back"><img class="back_img" src="images/SSBM.jpg"></div>-->
+            <!--</div>-->
+            <!--<div class="card col-xs-2">-->
+                <!--<div class="front"><img class="front_img" src="images/Luigi.png"></div>-->
+                <!--<div class="back"><img class="back_img" src="images/SSBM.jpg"></div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="card col-xs-2">-->
+            <!--<div class="front"><img class="front_img" src="images/Mario.png"></div>-->
+            <!--<div class="back"><img class="back_img" src="images/SSBM.jpg"></div>-->
+        <!--</div>-->
+        <!--<div class="card col-xs-2">-->
+            <!--<div class="front"><img class="front_img" src="images/Mario.png"></div>-->
+            <!--<div class="back"><img class="back_img" src="images/SSBM.jpg"></div>-->
+        <!--</div>-->
+        <!--<div class="card col-xs-2">-->
+            <!--<div class="front"><img class="front_img" src="images/Sheik.png"></div>-->
+            <!--<div class="back"><img class="back_img" src="images/SSBM.jpg"></div>-->
+        <!--</div>-->
+        <!--<div class="card col-xs-2">-->
+            <!--<div class="front"><img class="front_img" src="images/Sheik.png"></div>-->
+            <!--<div class="back"><img class="back_img" src="images/SSBM.jpg"></div>-->
+        <!--</div>-->
+        <!--<div class="card col-xs-2">-->
+            <!--<div class="front"><img class="front_img" src="images/Zelda.png"></div>-->
+            <!--<div class="back"><img class="back_img" src="images/SSBM.jpg"></div>-->
+        <!--</div>-->
+        <!--<div class="card col-xs-2">-->
+            <!--<div class="front"><img class="front_img" src="images/Zelda.png"></div>-->
+            <!--<div class="back"><img class="back_img" src="images/SSBM.jpg"></div>-->
+        <!--</div>-->
+    </main>
+</body>
+</html>
